@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messenger: @Rekz Banz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #19124e;
+      color: #fefeff;
+    }
+    h1 { color: #fefeff; }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover { background-color: #0056b3; }
+    button:disabled { background-color: #ccc; cursor: default; }
+    .question { margin-bottom: 25px; }
+    .correct { color: #00ff88; font-weight: bold; }
+    .wrong { color: #ff5577; font-weight: bold; }
+    .highlight { margin-top: 10px; }
+    input[type="radio"] { transform: scale(1.5); margin-right: 10px; }
+    #finishBtn { font-size: 2em; padding: .1em 1em; }
+    .nav-buttons { margin-top: 20px; display: flex; gap: 10px; }
+
+    #codeInput {
+      font-size: 15px;
+      padding: 10px 20px;
+      width: 265px;
+      border-radius: 8px;
+      border: 2px solid #888;
+    }
+
+    #codeInput::placeholder { font-size: 15px; }
+
+    /* Smaller font for Enter Access Code */
+    #accessSection h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Style for filename display above access code */
+    #fileDisplay {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #9fe3ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="accessSection">
+    <p id="fileDisplay"></p> <!-- NEW filename display -->
+    <h2>Enter Access Code: '12345'</h2>
+    <div style="position:relative; display:inline-block;">
+      <input type="password" id="codeInput" placeholder="Enter code here"
+        style="padding-right:45px;">
+    
+      <span id="toggleEye"
+        style="
+          position:absolute;
+          right:12px;
+          top:50%;
+          transform:translateY(-50%);
+          cursor:pointer;
+          font-size:20px;
+          color:#9fe3ff;
+          user-select:none;
+        "
+      >👁️</span>
+    </div>
+    
+    <br>
+    <button type="button" id="accessSubmit" style="padding:10px 40px; font-size:20px;">Login</button>
+
+    <span id="contactLink" style="margin-left:16px; font-size:14px; text-decoration:underline; cursor:pointer; color:#9fe3ff;">
+     Contact here! 
+    </span>
+
+
+    <p id="message" aria-live="polite"></p>
+    <br>
+    <p id="tipsArea">Loading tips...</p>
+  </div>
+
+  <div id="mainContent" style="display:none;">
+    <div id="reviewerSection">
+      <h1>Reviewer: Hydraulics and Pneumatics</h1>
+ 
+ <section class="reviewer">
+
+  <!-- ================= CONTEXT ================= -->
+  <details open>
+    <summary><strong>I. CONTEXT: Use of Hydraulics in Industry</strong></summary>
+    <ul>
+      <li>Hydraulic industrial equipment is widely used due to its reliability and dependability.</li>
+      <li>Hydraulic systems provide high force using pressurized fluid.</li>
+      <li>They are commonly used in industries that affect everyday life.</li>
+    </ul>
+  </details>
+
+  <!-- ================= HYDRAULIC PUMPS ================= -->
+  <details>
+    <summary><strong>II. Hydraulic Pumps</strong></summary>
+
+    <ul>
+      <li><strong>Main Purpose</strong>
+        <ul>
+          <li>Convert mechanical energy into hydraulic energy.</li>
+          <li>Transfer power through pressurized hydraulic fluid.</li>
+        </ul>
+      </li>
+
+      <li><strong>Balanced Vane Pump</strong>
+        <ul>
+          <li>Uses an elliptical cam ring.</li>
+          <li>Has two inlet and two outlet ports.</li>
+          <li>Pressure forces are equal and opposite.</li>
+          <li>Results in zero net force on shaft and bearings.</li>
+          <li>Reduces noise, vibration, and bearing wear.</li>
+          <li>Increases pump service life.</li>
+        </ul>
+      </li>
+
+      <li><strong>Applications of Hydraulic Pumps</strong>
+        <ul>
+          <li>Automobiles (power steering systems).</li>
+          <li>Hydraulic jacks (hand-operated pumps).</li>
+          <li>Backhoes and construction equipment.</li>
+          <li>Tractor lift systems.</li>
+          <li>Automatic transmissions.</li>
+          <li>Material handling systems.</li>
+          <li>Compressors and controllers.</li>
+          <li>Household systems (power lifts, air-conditioning).</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+
+  <!-- ================= CONTROL VALVES ================= -->
+  <details>
+    <summary><strong>III. Control Valves</strong></summary>
+
+    <ul>
+      <li>Control valves regulate motion, force, and direction in a hydraulic system.</li>
+      <li>They ensure safe and desired system operation.</li>
+      <li>Hydraulic energy from the pump is controlled before reaching actuators.</li>
+    </ul>
+
+    <details>
+      <summary><em>Types of Control Valves</em></summary>
+      <ul>
+        <li>Directional Control Valves</li>
+        <li>Flow Control Valves</li>
+        <li>Pressure Control Valves</li>
+      </ul>
+    </details>
+
+    <!-- Directional Control Valves -->
+    <details>
+      <summary><em>1. Directional Control Valves (DCV)</em></summary>
+      <ul>
+        <li>Control the start, stop, and direction of fluid flow.</li>
+        <li>Ports are external openings where fluid enters or exits.</li>
+        <li>Number of ports is called the “way”.</li>
+      </ul>
+
+      <details>
+        <summary>Classification of DCVs</summary>
+        <ul>
+          <li><strong>By Construction</strong>
+            <ul>
+              <li>Poppet valves</li>
+              <li>Spool valves</li>
+            </ul>
+          </li>
+
+          <li><strong>By Number of Ports</strong>
+            <ul>
+              <li>Two-way valves</li>
+              <li>Three-way valves</li>
+              <li>Four-way valves</li>
+            </ul>
+          </li>
+
+          <li><strong>By Switching Position</strong>
+            <ul>
+              <li>Two-position</li>
+              <li>Three-position</li>
+            </ul>
+          </li>
+
+          <li><strong>By Actuation Method</strong>
+            <ul>
+              <li>Manual</li>
+              <li>Mechanical</li>
+              <li>Solenoid (electrical)</li>
+              <li>Hydraulic (pilot)</li>
+              <li>Pneumatic</li>
+              <li>Indirect actuation</li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Check Valves</summary>
+        <ul>
+          <li>Allow fluid flow in only one direction.</li>
+          <li>Prevent backflow.</li>
+          <li>Simple, small, and inexpensive.</li>
+          <li>Ball check valve uses a ball as closing element.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Spool Valves</summary>
+        <ul>
+          <li>Consist of a sliding spool inside a valve body.</li>
+          <li>Grooves control fluid interconnection between ports.</li>
+          <li>Leakage depends on clearance, fluid viscosity, and pressure.</li>
+        </ul>
+      </details>
+    </details>
+
+    <!-- Flow Control -->
+    <details>
+      <summary><em>2. Flow Control Valves</em></summary>
+      <ul>
+        <li>Regulate the speed of actuators.</li>
+        <li>Control fluid flow by varying valve opening area.</li>
+        <li>Reducing opening decreases flow rate.</li>
+        <li>Increasing opening increases flow rate.</li>
+      </ul>
+    </details>
+
+    <!-- Pressure Control -->
+    <details>
+      <summary><em>3. Pressure Relief Valves</em></summary>
+      <ul>
+        <li>Protect hydraulic components from excessive pressure.</li>
+        <li>Maintain system pressure within safe limits.</li>
+        <li>Normally closed valve.</li>
+        <li>Opens when pressure exceeds preset maximum value.</li>
+        <li>Essential for system safety.</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <!-- ================= GRAPHICAL SYMBOLS ================= -->
+  <details>
+    <summary><strong>IV. Graphical Representation of Hydraulic Elements</strong></summary>
+
+    <ul>
+      <li>Hydraulic circuits are complex and difficult to draw realistically.</li>
+      <li>Graphical symbols represent function, not physical design.</li>
+      <li>Symbols follow standards such as:
+        <ul>
+          <li>DIN 24300</li>
+          <li>ISO 1219</li>
+          <li>ISO 5599</li>
+          <li>BS 2917</li>
+          <li>ANSI / JIC</li>
+        </ul>
+      </li>
+    </ul>
+
+    <details>
+      <summary>What Symbols Represent</summary>
+      <ul>
+        <li>Function of the component</li>
+        <li>Actuation and return methods</li>
+        <li>Number of ports</li>
+        <li>Number of switching positions</li>
+        <li>Flow direction</li>
+        <li>Operating principle</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>What Symbols Do NOT Represent</summary>
+      <ul>
+        <li>Size or dimensions</li>
+        <li>Manufacturer or cost</li>
+        <li>Physical construction details</li>
+        <li>Actual port operation</li>
+        <li>Unions or fittings</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Port Designation</summary>
+      <ul>
+        <li>Older systems used letter-based port designation.</li>
+        <li>Modern systems follow ISO 5599 number-based designation.</li>
+      </ul>
+    </details>
+
+  </details>
+
+</section>
+ 
+ 
+ 
+      <button onclick="showQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quizSection" style="display:none;">
+      <h1>Quiz: Hydraulics and Pneumatics</h1>
+      <p style="font-size: 15px; font-weight: 600; margin: 0;">Multiple-Choice Quiz (random items)</p>
+      <form id="quizForm"></form>
+
+      <div class="nav-buttons">
+        <button id="finishBtn">Score</button>
+        <button type="button" onclick="refreshQuiz()">Restart Quiz</button>
+        <button type="button" onclick="backToReviewer()">Reviewer</button>
+      </div>
+      <div id="result" class="highlight"></div>
+    </div>
+  </div>
+
+<!-- CONTACT POPUP MODAL -->
+<div id="contactModalBG" style="
+  display:none; 
+  position:fixed; 
+  top:0; left:0; 
+  width:100%; height:100%; 
+  background:rgba(0,0,0,0.6); 
+  z-index:1000;
+">
+  <div id="contactModal" style="
+    background:#ffffff; 
+    color:#000; 
+    width:90%; 
+    max-width:450px; 
+    margin:80px auto; 
+    padding:25px; 
+    border-radius:12px; 
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+  ">
+
+    <h2 style="margin-top:0; font-size:22px; text-align:center;">
+      Fill-in with your details here. <br>I'll contact you shortly!
+    </h2>
+
+    <label>Name:</label>
+    <input id="c_name" type="text" style="width:100%; padding:8px; margin-bottom:10px;">
+
+    <label>Contact No.:</label>
+    <input id="c_contact" type="text" style="width:100%; padding:8px; margin-bottom:10px;">
+
+    <label>Social Media Account:</label>
+    <input id="c_social" type="text" style="width:100%; padding:8px; margin-bottom:10px;">
+
+    <label>Request / Comment:</label>
+    <textarea id="c_request" style="width:100%; padding:8px; margin-bottom:10px; height:80px;"></textarea>
+
+    <button id="c_submit" style="
+      width:100%; padding:10px; 
+      background:#007BFF; color:#fff; border:none; border-radius:6px;
+      margin-top:10px; font-size:18px;
+    ">Submit</button>
+
+    <button id="c_close" style="
+      width:100%; padding:10px; 
+      background:#444; color:#fff; border:none; border-radius:6px;
+      margin-top:10px; font-size:18px;
+    ">Close</button>
+<!--
+    <p style="margin-top:20px; font-size:20px; text-align:center; color:#333;">
+      or you can contact this messenger: <b>@Rekz Banz</b>
+    </p>
+-->
+
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // ===== SHOW / HIDE PASSWORD TOGGLE =====
+    const toggleEye = document.getElementById("toggleEye");
+  const codeInputEye = document.getElementById("codeInput");
+
+  toggleEye.addEventListener("click", () => {
+    if (codeInputEye.type === "password") {
+      codeInputEye.type = "text";
+      toggleEye.textContent = "🙈"; // hide icon
+    } else {
+      codeInputEye.type = "password";
+      toggleEye.textContent = "👁️"; // show icon
+    }
+  });
+
+  // ===== Display filename on login page =====
+  const quizTitleEl = document.querySelector("#quizSection h1");
+  const displayFileName = quizTitleEl ? quizTitleEl.textContent.replace("Quiz: ", "").trim() : "index.html";
+  const fileDisplay = document.getElementById("fileDisplay");
+  if (fileDisplay) fileDisplay.textContent = displayFileName;
+
+  // ===== SETTINGS =====
+  const BIN_URL_CODE = "https://api.jsonbin.io/v3/b/68ec7ba7d0ea881f409fea07/latest";
+  const BIN_URL_TIPS = "https://api.jsonbin.io/v3/b/68f1b652ae596e708f180d5d/latest";
+  const MASTER_KEY_CODE = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+  const MASTER_KEY_TIPS = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+
+  // === LOGGER BIN (Access Log) ===
+  const BIN_URL_LOG = "https://api.jsonbin.io/v3/b/6911a123d0ea881f40df102a";
+  const MASTER_KEY_LOG = MASTER_KEY_CODE;
+
+  // === SCORE LOG BIN (New) ===
+  const BIN_URL_SCORE = "https://api.jsonbin.io/v3/b/6912985cd0ea881f40e0cf7c";
+  const MASTER_KEY_SCORE = MASTER_KEY_CODE;
+
+  // ===== ELEMENTS =====
+  const accessSection = document.getElementById("accessSection");
+  const mainContent = document.getElementById("mainContent");
+  const codeInput = document.getElementById("codeInput");
+  const accessSubmit = document.getElementById("accessSubmit");
+  const message = document.getElementById("message");
+  const tipsArea = document.getElementById("tipsArea");
+
+// ===============================
+// CONTACT MODAL LOGIC (WORKING)
+// ===============================
+
+// open modal
+const contactLink = document.getElementById("contactLink");
+const contactBG = document.getElementById("contactModalBG");
+const contactClose = document.getElementById("c_close");
+const contactSubmit = document.getElementById("c_submit");
+
+if (contactLink && contactBG) {
+  contactLink.addEventListener("click", () => {
+    contactBG.style.display = "block";
+  });
+}
+
+if (contactClose && contactBG) {
+  contactClose.addEventListener("click", () => {
+    contactBG.style.display = "none";
+  });
+}
+// ===============================
+// CONTACT SUBMISSION SAVE LOGIC
+// ===============================
+const BIN_CONTACT_LOG = "https://api.jsonbin.io/v3/b/69146372d0ea881f40e3989e";
+const MASTER_KEY_CONTACT = MASTER_KEY_CODE;
+
+if (contactSubmit) {
+  contactSubmit.addEventListener("click", async () => {
+    const name = document.getElementById("c_name").value.trim();
+    const contact = document.getElementById("c_contact").value.trim();
+    const social = document.getElementById("c_social").value.trim();
+    const request = document.getElementById("c_request").value.trim();
+
+    if (!name || !contact || !request) {
+      alert("Please fill out name, contact, and request/comment.");
+      return;
+    }
+
+    const quizTitleElLocal = document.querySelector("#quizSection h1");
+    const fileName = quizTitleElLocal
+      ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim()
+      : "index.html";
+
+    const deviceInfo = await getDeviceInfo();
+
+    try {
+      const getRes = await fetch(`${BIN_CONTACT_LOG}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_CONTACT }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+
+      logs.push({
+        event: "Client Request",
+        request,
+        name,
+        contact,
+        social,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_CONTACT_LOG, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_CONTACT
+        },
+        body: JSON.stringify(logs)
+      });
+
+      alert("Message sent!");
+      contactBG.style.display = "none";
+
+    } catch (err) {
+      alert("Error sending contact message.");
+      console.error(err);
+    }
+  });
+}
+
+
+
+  // ===== HELPERS =====
+  function findStringKey(obj, keyName) {
+    if (!obj || typeof obj !== "object") return undefined;
+    for (const k in obj) {
+      if (k.toLowerCase() === keyName.toLowerCase() && typeof obj[k] === "string") {
+        return obj[k];
+      }
+      const v = obj[k];
+      if (typeof v === "object") {
+        const nested = findStringKey(v, keyName);
+        if (nested) return nested;
+      }
+    }
+  }
+
+  async function getDeviceInfo() {
+    const uaData = navigator.userAgentData || {};
+    const ua = navigator.userAgent;
+    const platform = navigator.platform;
+    const language = navigator.language;
+    const screenResolution = `${window.screen.width}x${window.screen.height}`;
+    const browserVersion = uaData.brands
+      ? uaData.brands.map(b => `${b.brand} ${b.version}`).join(", ")
+      : ua;
+
+    // Determine general device type
+    const uaLower = ua.toLowerCase();
+    let deviceType = "desktop";
+    if (/mobi|iphone|android/i.test(uaLower)) {
+      deviceType = "mobile";
+    } else if (/tablet|ipad|nexus 7|nexus 10/i.test(uaLower)) {
+      deviceType = "tablet";
+    }
+
+    // Get approximate IP + region/country info (non-identifying)
+    let networkInfo = "Unavailable";
+    try {
+      const res = await fetch("https://ipapi.co/json/");
+      if (res.ok) {
+        const info = await res.json();
+        networkInfo = {
+          ip: info.ip,
+          city: info.city,
+          region: info.region,
+          country: info.country_name,
+          org: info.org
+        };
+      }
+    } catch {
+      networkInfo = "Network lookup failed";
+    }
+
+    // Optional: request geolocation with user consent
+    const location = await new Promise(resolve => {
+      if (!navigator.geolocation) return resolve("Geolocation not supported");
+      navigator.geolocation.getCurrentPosition(
+        pos => resolve({
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+          accuracy: pos.coords.accuracy
+        }),
+        () => resolve("Permission denied or unavailable"),
+        { timeout: 5000 }
+      );
+    });
+
+    return {
+      ua,
+      browserVersion,
+      platform,
+      language,
+      screenResolution,
+      deviceType,
+      networkInfo,
+      location
+    };
+  }
+
+  async function saveLoginToJsonBin(codeUsed) {
+    try {
+      // get filename from quiz title h1
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_LOG}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_LOG }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Login Access",
+        accessCode: codeUsed,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_LOG, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_LOG
+        },
+        body: JSON.stringify(logs)
+      });
+
+      console.log(`✅ Login logged successfully (file: ${fileName}).`);
+    } catch (err) {
+      console.error("❌ Error logging to JSONBin:", err);
+    }
+  }
+
+  // ===== LOAD TIPS =====
+  async function loadTips() {
+    try {
+      const resp = await fetch(BIN_URL_TIPS, {
+        headers: { "X-Master-Key": MASTER_KEY_TIPS, "Content-Type": "application/json" }
+      });
+      const data = await resp.json();
+      const tipsText =
+        findStringKey(data, "tips") ||
+        "Tips: <br>Press Enter after typing the code.<br>Stay online when entering.<br>For help, contact messenger: @Rekz Banz";
+      tipsArea.innerHTML = tipsText;
+    } catch (err) {
+      console.error("Tips fetch error:", err);
+      tipsArea.innerHTML =
+        "Could not load page. Please check your internet connection.";
+    }
+  }
+  loadTips();
+
+  // === NEW FUNCTION: Save Quiz Score to JSONBin ===
+  async function saveScoreToJsonBin(score, total) {
+    try {
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_SCORE}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_SCORE }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Quiz Score",
+        score: `${score}/${total}`,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_SCORE, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_SCORE
+        },
+        body: JSON.stringify(logs)
+      });
+      console.log("✅ Quiz score saved to JSONBin successfully.");
+    } catch (err) {
+      console.error("❌ Error saving quiz score:", err);
+    }
+  }
+
+  // ===== LOCAL STORAGE =====
+  const fileName = window.location.pathname.split("/").pop() || "default";
+  const storageKey = "savedAccessCode_" + fileName.replace(/\W+/g, "_");
+  const savedCode = localStorage.getItem(storageKey);
+  if (savedCode) codeInput.value = savedCode;
+  codeInput.addEventListener("input", () =>
+    localStorage.setItem(storageKey, codeInput.value)
+  );
+
+  // ===== LOGIN HANDLER =====
+  codeInput.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") accessSubmit.click();
+  });
+
+  accessSubmit.addEventListener("click", async () => {
+    const input = codeInput.value.trim();
+    if (!input) {
+      message.textContent = "Please enter the access code.";
+      return;
+    }
+
+    accessSubmit.disabled = true;
+    codeInput.disabled = true;
+    message.textContent = "Checking...";
+
+    try {
+      const resp = await fetch(BIN_URL_CODE, {
+        headers: { "X-Master-Key": MASTER_KEY_CODE, "Content-Type": "application/json" }
+      });
+
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+
+      const remoteCode =
+        findStringKey(data, "accessCode") ||
+        findStringKey(data, "code") ||
+        findStringKey(data, "access");
+
+      if (!remoteCode) {
+        message.textContent = "Access code not found in storage record.";
+        throw new Error("No accessCode in JSON");
+      }
+
+      if (input === remoteCode.trim()) {
+        accessSection.style.display = "none";
+        mainContent.style.display = "block";
+        message.textContent = "";
+        saveLoginToJsonBin(input); // <<== AUTO LOG TO JSONBIN
+        setTimeout(() => {
+          const btn = document.querySelector("#mainContent button");
+          if (btn) btn.focus();
+        }, 100);
+      } else {
+        message.textContent = "Wrong code. Please refer to contact";
+        localStorage.removeItem(storageKey);
+        accessSubmit.disabled = false;
+        codeInput.disabled = false;
+      }
+    } catch (err) {
+      console.error("Access fetch error:", err);
+      message.textContent = "Error fetching code. Check console for details.";
+      accessSubmit.disabled = false;
+      codeInput.disabled = false;
+    }
+  });
+
+  // ===== QUIZ LOGIC =====
+  const pool = [
+  
+
+{
+    q: "The basic idea behind any hydraulic system is very simple: Force that is applied at one point is transmitted to another point using ______.",
+    choices: [
+      "a compressible fluid",
+      "an incompressible fluid",
+      "a cold compress",
+      "solid metal rods",
+      "electrical wiring",
+      "air pressure only"
+    ],
+    correctIndex: 1
+  },
+  {
+    q: "It is important for a hydraulic system to contain what?",
+    choices: [
+      "air bubbles",
+      "no air bubbles",
+      "compressible fluid",
+      "excessive heat",
+      "vacuum pressure",
+      "electrical insulation"
+    ],
+    correctIndex: 1
+  },
+  {
+    q: "Where can you look on your car to see a good example of a basic piston-driven hydraulic system?",
+    choices: [
+      "the power steering system",
+      "the instrument panel",
+      "the brake system",
+      "the exhaust system",
+      "the cooling fan",
+      "the battery compartment"
+    ],
+    correctIndex: 2
+  },
+  {
+    q: "The great thing about hydraulic systems is that the pipe connecting the two cylinders can be what?",
+    choices: [
+      "any length and shape",
+      "disconnected, yet still operate",
+      "filled with air",
+      "made only of rubber",
+      "restricted to straight lines",
+      "electrically insulated"
+    ],
+    correctIndex: 0
+  },
+  {
+    q: "Which one of the following is an example of a hydraulically-operated machine?",
+    choices: [
+      "a wheelbarrow",
+      "a laptop computer",
+      "a bulldozer",
+      "a ceiling fan",
+      "a microwave oven",
+      "a flashlight"
+    ],
+    correctIndex: 0
+  },
+  {
+    q: "It is very easy to add what to a hydraulic system?",
+    choices: [
+      "force multiplication (or division)",
+      "force addition (or subtraction)",
+      "force square roots (or integers)",
+      "electrical resistance",
+      "thermal expansion",
+      "chemical reaction"
+    ],
+    correctIndex: 0
+  },
+  {
+    q: "Large hydraulic machines usually have these to hold the difference in the volume of oil displaced by the two sides of the cylinder.",
+    choices: [
+      "larger diameter lines",
+      "external reservoirs",
+      "men with buckets",
+      "sealed air tanks",
+      "electric pumps",
+      "metal springs"
+    ],
+    correctIndex: 1
+  },
+  {
+    q: "What is one of the best places to get up close and personal with large hydraulic machines?",
+    choices: [
+      "at the local mall",
+      "a deli",
+      "a construction site",
+      "a library",
+      "a movie theater",
+      "a classroom"
+    ],
+    correctIndex: 2
+  },
+  {
+    q: "It's not uncommon for a large hydraulic machine to require how much hydraulic oil?",
+    choices: [
+      "100 gallons",
+      "10 gallons",
+      "1 gallon",
+      "50 milliliters",
+      "1 liter",
+      "none at all"
+    ],
+    correctIndex: 1
+  },
+  {
+    q: "The simplest hydraulic device that you will find in common use today is what?",
+    choices: [
+      "a bulldozer",
+      "a log splitter",
+      "a crane",
+      "a forklift",
+      "a jackhammer",
+      "a conveyor belt"
+    ],
+    correctIndex: 1
+  },
+
+  {q: "Which industry uses hydraulic systems primarily to move heavy materials like boulders and structural components efficiently?", choices: ["Construction industry", "Textile industry", "Food processing industry", "Publishing industry", "Electronics manufacturing", "Telecommunications industry"], correctIndex: 0},
+  {q: "Why are hydraulic systems highly favored on construction sites?", choices: ["They provide high power in a small space", "They operate only on electricity", "They require no maintenance", "They work only with lightweight materials", "They eliminate the need for skilled operators", "They use compressible gases"], correctIndex: 0},
+  {q: "Which landscaping equipment commonly relies on hydraulics to raise its box bed?", choices: ["Dump truck", "Lawn mower", "Wheelbarrow", "Water sprinkler", "Leaf blower", "Hand tractor"], correctIndex: 0},
+  {q: "What property of hydraulic systems makes them useful for moving soil and gravel in landscaping?", choices: ["Ability to handle heavy loads", "Low operating temperature", "Use of elastic materials", "Manual operation", "Lightweight components", "High electrical efficiency"], correctIndex: 0},
+  {q: "Which part of an automobile most clearly demonstrates a hydraulic system in daily use?", choices: ["Brake system", "Dashboard lights", "Seat upholstery", "Radio antenna", "Windshield glass", "Speedometer"], correctIndex: 0},
+  {q: "In automotive manufacturing, hydraulics are commonly used in which process?", choices: ["Metal stamping", "Painting by hand", "Manual welding", "Plastic molding only", "Quality inspection", "Packaging"], correctIndex: 0},
+  {q: "Why are hydraulic systems preferred in aerospace applications?", choices: ["They provide high pressure with small fluid volume", "They are lighter than all other systems", "They require no maintenance", "They operate only at low pressure", "They use compressible gases", "They are purely mechanical"], correctIndex: 0},
+  {q: "Which aircraft components rely on hydraulic systems?", choices: ["Landing gear and power-assisted brakes", "Cabin lighting and seats", "Radar systems", "Communication radios", "Navigation computers", "Fuel gauges"], correctIndex: 0},
+  {q: "In amusement parks, hydraulics are used mainly to ensure what feature of rides?", choices: ["Safety and reliable braking", "Faster ticket sales", "Decorative motion only", "Sound effects", "Lighting control", "Food service operation"], correctIndex: 0},
+  {q: "What advantage do hydraulic systems provide over pulley systems in entertainment rides?", choices: ["Added layer of security", "Lower manufacturing cost", "Reduced noise only", "Manual control only", "Elimination of brakes", "Higher speed without control"], correctIndex: 0},
+  {q: "Which component is crucial in water treatment plants for directing the flow of water?", choices: ["Hydraulic valves", "Electric motors", "Mechanical springs", "Plastic filters", "Rubber hoses", "Cooling fans"], correctIndex: 0},
+  {q: "How do hydraulic valves help in water treatment processes?", choices: ["By controlling direction and rate of flow", "By heating the water", "By filtering contaminants", "By adding chemicals", "By storing excess water", "By cooling the system"], correctIndex: 0},
+  {q: "Which law explains that pressure in an enclosed fluid is uniform in all directions?", choices: ["Pascal’s law", "Newton’s first law", "Bernoulli’s principle", "Ohm’s law", "Hooke’s law", "Archimedes’ principle"], correctIndex: 0},
+  {q: "What type of fluid is used as the transmission medium in hydraulic systems?", choices: ["Pressurized incompressible liquid", "Compressible gas", "Steam", "Air–fuel mixture", "Water vapor", "Elastic polymer"], correctIndex: 0},
+  {q: "Which hydraulic system component stores the working fluid?", choices: ["Storage tank", "Control valve", "Hydraulic cylinder", "Pressure regulator", "Filter", "Piston"], correctIndex: 0},
+  {q: "What is the main function of a pressure regulator in a hydraulic system?", choices: ["Redirect excess fluid to maintain safe pressure", "Increase pump speed", "Filter contaminants", "Change fluid viscosity", "Store hydraulic oil", "Convert pressure into motion"], correctIndex: 0},
+  {q: "Why is leak-proof piping important in hydraulic systems?", choices: ["For safety, environmental, and economic reasons", "To increase fluid temperature", "To reduce system size", "To improve color of fluid", "To allow air entry", "To decrease pressure"], correctIndex: 0},
+  {q: "Which category of application includes tractors and earthmoving equipment?", choices: ["Mobile hydraulics", "Marine applications", "Industrial processing", "Aerospace equipment", "Entertainment systems", "Household appliances"], correctIndex: 0},
+  {q: "What is the primary role of a hydraulic pump in the system?", choices: ["Deliver fluid flow to the circuit", "Store hydraulic oil", "Control direction of fluid", "Regulate pressure only", "Convert motion to heat", "Filter contaminants"], correctIndex: 0},
+  {q: "Which type of pump delivers a constant volume of fluid regardless of pressure?", choices: ["Positive displacement pump", "Centrifugal pump", "Non-positive displacement pump", "Axial fan pump", "Jet pump", "Vacuum pump"], correctIndex: 0},
+  {q: "Which pump type is most suitable for high-pressure hydraulic applications?", choices: ["Positive displacement pump", "Centrifugal pump", "Propeller pump", "Diffuser pump", "Gravity pump", "Air lift pump"], correctIndex: 0},
+  {q: "What happens if the discharge port of a positive displacement pump is completely blocked?", choices: ["The weakest component in the circuit may fail", "Pump pressure drops to zero", "Fluid flow increases indefinitely", "System efficiency improves", "Fluid temperature decreases", "Pump stops automatically"], correctIndex: 0},
+  {q: "Which pump is commonly classified as a non-positive displacement pump?", choices: ["Centrifugal pump", "Gear pump", "Vane pump", "Piston pump", "Gerotor pump", "Reciprocating pump"], correctIndex: 0},
+  {q: "What is cavitation in hydraulic systems?", choices: ["Formation of vapor cavities due to low pressure", "Increase in oil viscosity", "Leakage through seals", "Overheating of motor", "Corrosion of pipes", "Electrical short circuit"], correctIndex: 0},
+  {q: "How can cavitation be reduced in a pump?", choices: ["By using larger inlet pipes and lower inlet velocity", "By increasing outlet pressure", "By reducing oil density", "By increasing pump lift", "By blocking inlet flow", "By removing the filter"], correctIndex: 0},
+  {q: "Which valve type controls the direction of fluid flow in a hydraulic circuit?", choices: ["Directional control valve", "Flow control valve", "Pressure relief valve", "Check valve", "Needle valve", "Relief regulator"], correctIndex: 0},
+  {q: "Which valve protects the hydraulic system from excessive pressure?", choices: ["Pressure relief valve", "Flow control valve", "Directional control valve", "Check valve", "Throttle valve", "Needle valve"], correctIndex: 0},
+  {q: "What is the main advantage of balanced vane pumps over unbalanced vane pumps?", choices: ["Reduced bearing load and longer service life", "Higher leakage rate", "Lower volumetric efficiency", "Simpler construction", "Higher noise level", "Lower reliability"], correctIndex: 0},
+  {q: "Which type of valve permits free flow of fluid in only one direction?", choices: ["Check valve", "Spool valve", "Flow control valve", "Pressure regulator", "Directional valve", "Relief valve"], correctIndex: 0}
+
+  
+  ];
+
+// === UPDATE QUIZ TITLE (selected/total items) ===
+function updateQuizTitleCount(selectedCount) {
+  const quizTitleEl = document.querySelector("#quizSection h1");
+  if (quizTitleEl) {
+    const totalItems = pool.filter(item => item && item.q && item.choices).length;
+    quizTitleEl.textContent = `Quiz: Hydraulics and Pneumatics (${selectedCount}/${totalItems} items)`;
+  }
+}
+
+  function pickRandom(arr, n) {
+    const copy = [...arr];
+    const result = [];
+    while (result.length < n && copy.length > 0) {
+      const idx = Math.floor(Math.random() * copy.length);
+      result.push(copy.splice(idx, 1)[0]);
+    }
+    return result;
+  }
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  function selectRandomChoices(item) {
+    const correctChoice = item.choices[item.correctIndex];
+    let others = item.choices.filter((_, idx) => idx !== item.correctIndex);
+    shuffleArray(others);
+    let selected = [correctChoice, ...others.slice(0, 4)];
+    shuffleArray(selected);
+    item.correctIndex = selected.indexOf(correctChoice);
+    item.choices = selected;
+  }
+
+  let quizItems = [];
+
+  window.showQuiz = function () {
+    document.getElementById("reviewerSection").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
+    buildQuiz();
+  };
+
+  window.backToReviewer = function () {
+    document.getElementById("quizSection").style.display = "none";
+    document.getElementById("reviewerSection").style.display = "block";
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+  };
+
+  window.refreshQuiz = function () {
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("finishBtn").disabled = false;
+    buildQuiz();
+  };
+
+  function buildQuiz() {
+    quizItems = pickRandom(pool, Math.min(15, pool.length));
+    const form = document.getElementById("quizForm");
+    form.innerHTML = "";
+    quizItems.forEach((item, i) => {
+      selectRandomChoices(item);
+      const div = document.createElement("div");
+      div.className = "question";
+      const q = document.createElement("p");
+      q.textContent = `${i + 1}. ${item.q}`;
+      div.appendChild(q);
+      item.choices.forEach((choice, idx) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = `q${i}`;
+        radio.value = idx;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(" " + choice));
+        div.appendChild(label);
+        div.appendChild(document.createElement("br"));
+      });
+      form.appendChild(div);
+    });
+    updateQuizTitleCount(quizItems.length);
+  }
+
+  document.getElementById("finishBtn").addEventListener("click", async function () {
+    let score = 0;
+    const total = quizItems.length;
+    for (let i = 0; i < total; i++) {
+      const radios = document.querySelectorAll(`input[name="q${i}"]`);
+      let selected = -1;
+      radios.forEach(r => { if (r.checked) selected = parseInt(r.value); });
+      const div = document.getElementById("quizForm").children[i];
+      if (selected === quizItems[i].correctIndex) {
+        score++;
+        div.insertAdjacentHTML("beforeend", "<div class='correct'>✔ Correct</div>");
+      } else {
+        const correctAnswer = quizItems[i].choices[quizItems[i].correctIndex];
+        div.insertAdjacentHTML("beforeend", `<div class='wrong'>✘ Wrong. Correct: ${correctAnswer}</div>`);
+      }
+      radios.forEach(r => r.disabled = true);
+    }
+    document.getElementById("result").innerHTML = `<h2>Your Score: ${score} / ${total}</h2>`;
+    this.disabled = true;
+
+    // 🧠 Save score to JSONBin
+    await saveScoreToJsonBin(score, total);
+  });
+});
+</script>
+</body>
+</html>
+
